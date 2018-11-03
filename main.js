@@ -31,12 +31,16 @@ $(document).ready(function() {
   });
 
   $('.btn-like').click(function() {
-    $.get('http://diablorip.leadsoftware.cn/count.php', function (ret) {
-      if(ret == '1') {
-        alert(lang[area].like);
-        location.reload();
-      }else {
-        alert(lang[area].likeError);
+    $.ajax({
+      url: 'http://diablorip.leadsoftware.cn/count.php',
+      xhrFields:{withCredentials: true},
+      success: function (ret) {
+        if(ret == '1') {
+          alert(lang[area].like);
+          location.reload();
+        }else {
+          alert(lang[area].likeError);
+        }
       }
     });
   });

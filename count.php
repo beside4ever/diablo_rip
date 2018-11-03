@@ -2,6 +2,10 @@
   $f_open = fopen("stat.txt","r+");
   $count = fgets($f_open);
 
+  header("Access-Control-Allow-Origin: http://www.diablorip.com");
+  header("Access-Control-Allow-Credentials:true");
+  header('Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Connection, User-Agent, Cookie');
+
   if($_GET['sum']) {
     echo $count;
   } else {
