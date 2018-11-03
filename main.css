@@ -1,0 +1,57 @@
+body {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.content {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 20px auto;
+  position: relative;
+}
+
+.gravestone {
+  width: 100%;
+  height: auto;
+}
+
+.epitaph {
+  position: absolute;
+  bottom: 30%;
+  width: 90%;
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+  text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -1px -2px;
+}
+
+.epitaph .title {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.btn-like {
+  background-color: #fff;
+  border-radius: 4px;
+  color: #333;
+  padding: 6px 12px;
+  font-size: 18px;
+}
+
+.message {
+  font-size: 14px;
+  border: 2px solid #acacac;
+  width: 100%;
+  max-width: 240px;
+  margin: 0 auto 20px auto;
+  padding: 12px;
+}
+
+#count {
+  margin-right: 4px;
+}
+
+.footer a {
+  color: #999;
+}
